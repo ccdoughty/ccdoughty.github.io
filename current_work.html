@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" style="background-color:Teal">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">C.C. Doughty</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Current Work</a></li>
+						<li><a href="elements.html">Previous Work</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Current work</h1>
+              <figure><img src="reion_timing_slices.png" alt="" style="width:100%"/></figure> <br>
+							<p>
+                <strong>Recently, I've run a suite of fixed gridsize Nyx cosmological hydrodynamic simulations to explore the convergence of the z=5.5 Ly&alpha;
+                forest as a function of resolution and box size, with a focus on how it is affected by the timing of
+                reionization. In the slices above, you can see how an earlier instantaneous reionization model leads to
+                an increased scale for pressure smoothing; structures are more smoothed out, and below a certain scale,
+                small structure is lost completely. Although it is generally assumed that the Ly&alpha; forest is converged
+                at 20 kpc resolution, if reionization occurs late enough, the lack of time for the gas to thermodynamically
+                respond to heat injection might mean this assumption no longer holds. <br> <br>
+
+                In particular, we are focused on very high redshift (z>5) and at
+                higher wavenumbers, where the forest is not as well converged, but where and when it is perhaps the most useful
+                for learning about dark matter and reionization.</strong> <br>
+
+                <ol>
+                <li><strong>We find that the Ly&alpha; forest power spectrum does not converge within 10 percent until ~10 kpc, and
+                wavenumbers larger than k>0.1 (s/km) are still not converged within this percentage. The photoionzation
+                rate &Gamma;<sub>HI</sub> used to achieve the mean flux (0.05) converges by 10 kpc as well.</strong></li>
+                <figure>
+                  <img src="PLya_resolution_FRz6.png" alt="" style="width:34%; margin-left:34%">
+                  <figcaption>The 1D Ly&alpha; power spectrum with instantaneous reionization at z<sub>re</sub>=6,
+                  for simulations with varying fixed grid resolutions. The legend indicates the resolution, and also
+                  the photoionization rate necessary to match the selected mean flux, in units of 1e-12 s<sup>-1</sup>.
+                  </figcaption>
+                </figure> <br>
+
+                <li><strong>While there is a difference in the rate of convergence for instantaneous reionizations at z=6 and z=9,
+                  they are not major. At 20 kpc and 40 kpc resolution the maximum percent difference
+                  in the residual is 10 percent, while by 10 kpc the maximum is only 5 percent.
+
+                  Also, while there is extra small scale power in the density field in a later reionization scenario,
+                  this can be completely washed out in the power spectrum by the hotter average temperature.</strong>
+                  <figure>
+                    <img src="PLya_reion_hist_resolution_combo.png" alt="" style="width:75%; margin-left:12.5%">
+                    <figcaption>Caption, left: 1D flux power spectra for z<sub>re</sub>=6 and z<sub>re</sub>=9 instantaneous
+                      reionization histories, for several resolutions. The residual panel shows each curve with respect
+                      to 5 kpc resolution. Caption, right: Same, but for unreionized boxes with different temperature floors
+                      applied in post processing.</figcaption>
+                  </figure>
+            </ol>
+              <strong>Side note: We are using ICs from O’Leary & McQuinn (2012), using an average streaming
+              velocity of 30 km/s (at z~1100), as this velocity could lead to early shock heating that eliminates small
+              structure. However, by z=5.5 we find that this only affects the power by <5 percent at most compared to &LeftAngleBracket;v&RightAngleBracket;=0 km/s.
+              The difference increases with higher resolution.</strong></li>
+                  <figure>
+                    <img src="P3D_PLya_vstream_compare.png" alt="" style="width:75%; margin-left:12.5%">
+                    <figcaption>Caption, left: The 3D gas density power for two streaming velocities, for several resolutions.
+                    Caption, right: The 1D flux power for the same simulations as on left.</figcaption>
+                  </figure>
+              </p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
